@@ -1,0 +1,23 @@
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/kazefx/CLionProjects/prototypeCPP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hft28q
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6e91e/fast && xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/kazefx/CLionProjects/prototypeCPP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vlHCaf
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6b2df/fast && xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+
+
