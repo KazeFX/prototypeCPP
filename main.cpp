@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 using namespace std;
 
 const char newline = '\n';
@@ -60,9 +61,27 @@ void getLineTest() {
     cout << "What's your name? ";
     getline (cin, mystr);
     cout << "Hello " << mystr << ".\n";
+
     cout << "What's your favorite team? ";
     getline (cin, mystr);
     cout << "I like " << mystr << " too!" << endl;
+}
+
+void sStreamTest() {
+    string mystr;
+    float price = 0;
+    int quantity = 0;
+
+    cout << "==sStreamTest ==" << endl;
+
+    cout << "Enter price: ";
+    getline (cin, mystr);
+    stringstream(mystr) >> price;
+
+    cout << "Enter quantity: ";
+    getline (cin, mystr);
+    stringstream(mystr) >> quantity;
+    cout << "Total price: " << price*quantity << endl;
 }
 
 int main() {
@@ -75,5 +94,6 @@ int main() {
     //compareTest();
     //inputTest();
     //getLineTest();
+    //sStreamTest();
     return 0;
 }
