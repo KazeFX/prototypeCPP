@@ -32,7 +32,7 @@ void compareTest() {
     int a, b, c;
     a = 2;
     b = 7;
-    c = (a>b) ? a : b;
+    c = (a > b) ? a : b;
     cout << c << endl;
 }
 
@@ -84,6 +84,42 @@ void sStreamTest() {
     cout << "Total price: " << price*quantity << endl;
 }
 
+void whileTest() {
+    cout << "== whileTest ==" << endl;
+    int n = 10;
+    while (n > 0) {
+        cout << n << ", ";
+        --n;
+    }
+}
+
+void doWhileTest() {
+    string str;
+    do {
+        cout << "Enter text: ";
+        getline (cin, str);
+        cout << "You entered: " << str << "\n";
+    } while (str != "goodbye");
+}
+
+void forTest() {
+    for (int n = 10; n > 0; n--) {
+        cout << n << ", ";
+    }
+    cout << "liftoff!\n";
+}
+
+void forTestTwo() {
+    int i, n;
+    for (n = 0, i = 100 ; n != i ; ++n, --i) {
+        cout << n << " and " << i << endl;
+    }
+}
+
+void forRangeTest() {
+    string str {"Hello!"};
+}
+
 int main() {
     //cout << "Code Prototypes";
     //cout << newline << endl;
@@ -95,5 +131,9 @@ int main() {
     //inputTest();
     //getLineTest();
     //sStreamTest();
+    //whileTest();
+    //doWhileTest();
+    //forTest();
+    //forTestTwo();
     return 0;
 }
