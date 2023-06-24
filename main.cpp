@@ -117,7 +117,78 @@ void forTestTwo() {
 }
 
 void forRangeTest() {
+    cout << "== forRangeTest ==" << endl;
     string str {"Hello!"};
+    for (char c : str) {
+        cout << "[" << c << "]";
+    }
+    cout << '\n';
+}
+
+void forRangeTestTwo() {
+    string strT {"Hell"};
+    for (auto c : strT) {
+        cout << "o" << c << "o";
+    }
+}
+
+void testJumpStatement() {
+    for (int n = 10; n > 0; n--) {
+        if (n == 5) continue;
+        cout << n << ", ";
+    }
+}
+
+void goToTest() {
+    int n = 10;
+    mylabel:
+        cout << n << ", ";
+        n--;
+        if (n > 0) goto mylabel;
+        cout << "let's go";
+}
+
+void switchStatementTest() {
+    cout << "Enter case: ";
+    int str;
+    cin >> str;
+    switch (str) {
+        case 1:
+            cout << "Case is: " << str;
+            break;
+        case 2:
+            cout << "Case is: " << str;
+            break;
+        default:
+            cout << "Wasn't 1 or 2";
+    }
+}
+
+int additionFunction(int a, int b) {
+    int r = a + b;
+    return r;
+}
+
+// Reference modifier instead of value.
+void duplicate(int& a, int& b, int& c) {
+    a *= 2;
+    b *= 2;
+    c *= 2;
+}
+
+void dublicateMain() {
+    cout << "== dublicateMain ==";
+    int x = 1, y = 3, z = 7;
+    duplicate(x, y, z);
+    cout << "x = " << x << ", y = " << y << ", z = " << z;
+}
+
+string concatenate(const string& a, const string& b) {
+    return a +" "+ b;
+}
+
+inline string inlineConc(const string& a, const string& b) {
+    return a + b;
 }
 
 int main() {
@@ -135,5 +206,14 @@ int main() {
     //doWhileTest();
     //forTest();
     //forTestTwo();
+    //forRangeTest();
+    //forRangeTestTwo();
+    //testJumpStatement();
+    //goToTest();
+    //switchStatementTest();
+    //cout << additionFunction(2, 1) << endl;
+    //dublicateMain();
+    //cout << concatenate("Hello", "world");
+    //cout << inlineConc("Hello", "world");
     return 0;
 }
