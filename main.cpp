@@ -221,6 +221,5 @@ int main() {
     //cout << concatenate("Hello", "world");
     //cout << inlineConc("Hello", "world");
     //cout << divide(10);
-
     return 0;
 }
