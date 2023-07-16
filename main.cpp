@@ -27,7 +27,7 @@ void inputTest() {
     cout << " and its double is " << i*2 << endl;
 }
 
-void compareTest() {11111111
+void compareTest() {
     cout << "== compareTest ==" << endl;
     int a, b, c;
     a = 2;
