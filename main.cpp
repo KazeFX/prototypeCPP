@@ -27,7 +27,7 @@ void inputTest() {
     cout << " and its double is " << i*2 << endl;
 }
 
-void compareTest() {
+void compareTest() {11111111
     cout << "== compareTest ==" << endl;
     int a, b, c;
     a = 2;
@@ -116,22 +116,6 @@ void forTestTwo() {
     }
 }
 
-/*void forRangeTest() {
-    cout << "== forRangeTest ==" << endl;
-    string str {"Hello!"};
-    for (char c : str) {
-        cout << "[" << c << "]";
-    }
-    cout << '\n';
-}*/
-
-void forRangeTestTwo() {
-    string strT {"Hell"};
-    for (auto c : strT) {
-        cout << "o" << c << "o";
-    }
-}
-
 void testJumpStatement() {
     for (int n = 10; n > 0; n--) {
         if (n == 5) continue;
@@ -203,17 +187,15 @@ int main() {
     test2dMatrix();
     testString();
     arith();
-    //compareTest();
-    //inputTest();
-    //getLineTest();
-    //sStreamTest();
-    //whileTest();
-    //doWhileTest();
-    //forTest();
-    //forTestTwo();
-    //forRangeTest();
-    //forRangeTestTwo();
-    //testJumpStatement();
+    compareTest();
+    inputTest();
+    getLineTest();
+    sStreamTest();
+    whileTest();
+    doWhileTest();
+    forTest();
+    forTestTwo();
+    testJumpStatement();
     //goToTest();
     //switchStatementTest();
     //cout << additionFunction(2, 1) << endl;
