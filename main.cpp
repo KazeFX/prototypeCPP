@@ -56,6 +56,7 @@ void arith() {
     cout << result << endl;
 }
 
+
 void getLineTest() {
     string mystr;
     cout << "What's your name? ";
