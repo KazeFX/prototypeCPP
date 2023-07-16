@@ -116,14 +116,14 @@ void forTestTwo() {
     }
 }
 
-void forRangeTest() {
+/*void forRangeTest() {
     cout << "== forRangeTest ==" << endl;
     string str {"Hello!"};
     for (char c : str) {
         cout << "[" << c << "]";
     }
     cout << '\n';
-}
+}*/
 
 void forRangeTestTwo() {
     string strT {"Hell"};
@@ -196,17 +196,13 @@ inline int divide (int a, int b = 2) {
 }
 
 
-
-
-
-
 int main() {
-    //cout << "Code Prototypes";
-    //cout << newline << endl;
-    //cout << PI << endl;
-    //test2dMatrix();
-    //testString();
-    //arith();
+    cout << "Code Prototypes";
+    cout << newline << endl;
+    cout << PI << endl;
+    test2dMatrix();
+    testString();
+    arith();
     //compareTest();
     //inputTest();
     //getLineTest();
