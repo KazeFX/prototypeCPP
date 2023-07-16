@@ -99,6 +99,7 @@ void doWhileTest() {
     do {
         cout << "Enter text: ";
         getline (cin, str);
+        cout << "Enter Goodbye to quit.";
         cout << "You entered: " << str << "\n";
     } while (str != "goodbye");
 }
