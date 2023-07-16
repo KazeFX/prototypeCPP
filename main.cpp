@@ -194,10 +194,10 @@ int main() {
     getLineTest();
     sStreamTest();
     whileTest();
-    doWhileTest();
-    forTest();
-    forTestTwo();
-    testJumpStatement();
+    //doWhileTest();
+    //forTest();
+    //forTestTwo();
+    //testJumpStatement();
     //goToTest();
     //switchStatementTest();
     //cout << additionFunction(2, 1) << endl;
