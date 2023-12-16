@@ -6,6 +6,13 @@ using namespace std;
 const char newline = '\n';
 #define PI 3.14159
 
+void test2dMatrix();
+void inputTest();
+void compareTest();
+inline string inlineConc(const string&, const string&);
+long factorial(long);
+void factorialTest();
+
 void test2dMatrix() {
     cout << "== test2dMatrix ==" << endl;
     int test[3][2] = {{2, -5},
@@ -181,19 +188,30 @@ inline int divide (int a, int b = 2) {
     return a / b;
 }
 
+long factorial(long a) {
+    if (a > 1) {
+        return (a * factorial(a-1));
+    }
+    else return 1;
+}
+
+void factorialTest(long b) {
+    long number = b;
+    cout << number << "! = " << factorial(number) << endl;
+}
 
 int main() {
-    cout << "Code Prototypes";
-    cout << newline << endl;
-    cout << PI << endl;
-    test2dMatrix();
-    testString();
-    arith();
-    compareTest();
-    inputTest();
-    getLineTest();
-    sStreamTest();
-    whileTest();
+    //cout << "Code Prototypes";
+    //cout << newline << endl;
+    //cout << PI << endl;
+    //test2dMatrix();
+    //testString();
+    //arith();
+    //compareTest();
+    //inputTest();
+    //getLineTest();
+    //sStreamTest();
+    //whileTest();
     //doWhileTest();
     //forTest();
     //forTestTwo();
@@ -205,5 +223,6 @@ int main() {
     //cout << concatenate("Hello", "world");
     //cout << inlineConc("Hello", "world");
     //cout << divide(10);
+    //factorialTest(5);
     return 0;
 }
